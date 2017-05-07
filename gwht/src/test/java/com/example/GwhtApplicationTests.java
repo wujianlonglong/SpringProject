@@ -4,6 +4,8 @@ import com.example.controller.HelloWorldController;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
+import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -28,5 +30,7 @@ public class GwhtApplicationTests {
 				.andDo(MockMvcResultHandlers.print())
 				.andReturn();
 	}
+
+
 
 }
